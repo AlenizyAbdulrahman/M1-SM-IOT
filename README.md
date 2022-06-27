@@ -1,13 +1,12 @@
-#CONNECT ESP32 TO ARDUINO
+# CONNECT ESP32 TO ARDUINO
 
 ### Programming Environments:
 Arduino IDE: https://randomnerdtutorials.com/projects-esp32/
 
 ### Preparing the ESP32 Board in Arduino IDE:
 Windows: https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
-
 ###Steps: 
-1- Plug the ESP32 to your PC or laptob by using micro cable.
+1- Plug the ESP32 to your PC or laptob by using micro cable. /n
 2- Copy the following link : https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 3- Open arduino ide > file > preferences > past the link from step 2 in "Additional Boards Manager URLS" > OK.
 4- Go to Tools > Board > Boards Manager > from the search bar write "esp32" > click on install.
