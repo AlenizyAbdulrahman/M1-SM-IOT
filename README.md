@@ -8,7 +8,7 @@ Windows: https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-i
 ### Steps: 
 1- Plug the ESP32 to your PC or laptob by using micro cable.\
 2- Copy the following link : https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json \
-3- Open arduino ide > file > preferences > past the link from step 2 in "Additional Boards Manager URLS" > OK.\
+3- Open arduino ide > file > preferences > paste the link from step 2 in "Additional Boards Manager URLS" > OK.\
 4- Go to Tools > Board > Boards Manager > from the search bar write "esp32" > click on install.\
 5- Go to Tools > Board >  select the name of your ESP32 board.\
 6- Go to Tools > Port and select a COM port available.\
