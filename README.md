@@ -7,33 +7,48 @@ Arduino IDE: https://randomnerdtutorials.com/projects-esp32/
 Windows: https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
 ### Steps: 
 1- Plug the ESP32 to your PC or laptob by using micro cable.\
-2- Copy the following link : https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json \
-3- Open arduino ide > file > preferences > paste the link from step 2 in "Additional Boards Manager URLS" > OK.\
-4- Go to Tools > Board > Boards Manager > from the search bar write "esp32" > click on install.\
-5- Go to Tools > Board >  select the name of your ESP32 board.\
-6- Go to Tools > Port and select a COM port available.\
+2- Go to Tools > Board > Boards Manager > from the search bar write "esp32" > click on install.\
+3- Go to Tools > Board >  select the name of your ESP32 board.\
+4- Go to Tools > Port and select a COM port available.\
 5- write the following code in arduion editor :
 
 ```js
 /*
   Blink
-*/
 
-// ledPin refers to ESP32 GPIO 23
-const int ledPin = 23;
+  Turns an LED on for one second, then off for one second, repeatedly.
+
+  Most Arduinos have an on-board LED you can control. On the UNO, MEGA and ZERO
+  it is attached to digital pin 13, on MKR1000 on pin 6. LED_BUILTIN is set to
+  the correct LED pin independent of which board is used.
+  If you want to know what pin the on-board LED is connected to on your Arduino
+  model, check the Technical Specs of your board at:
+  https://www.arduino.cc/en/Main/Products
+
+  modified 8 May 2014
+  by Scott Fitzgerald
+  modified 2 Sep 2016
+  by Arturo Guadalupi
+  modified 8 Sep 2016
+  by Colby Newman
+
+  This example code is in the public domain.
+
+  https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink
+*/
 
 // the setup function runs once when you press reset or power the board
 void setup() {
-  // initialize digital pin ledPin as an output.
-  pinMode(ledPin, OUTPUT);
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
 }
 
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(ledPin, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                  // wait for a second
-  digitalWrite(ledPin, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                  // wait for a second
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
 }
 ```
 #### Important: always check the pinout for your specific board before building any circuit.
